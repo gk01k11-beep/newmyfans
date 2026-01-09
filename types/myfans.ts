@@ -3,6 +3,12 @@ export interface CreatorStats {
     followers: string;
 }
 
+export interface MyfansPlan {
+    title: string;
+    price: number;
+    description: string;
+}
+
 export interface MyfansCreator {
     rank: number;
     name: string;
@@ -10,19 +16,9 @@ export interface MyfansCreator {
     profileUrl: string;
     categoryTags: string[];
     stats: CreatorStats;
-    previousRank?: number; // Optional, for calculating detecting rapid risers
-}
-
-export interface PlanAnalysis {
-    price: number;
-    title: string;
-    description: string;
-    keywords: string[];
-}
-
-export interface CreatorProfileDetail {
-    userId: string;
-    plans: PlanAnalysis[];
+    previousRank?: number;
+    plans?: MyfansPlan[];
+    benefits_summary?: string;
 }
 
 export interface TrendReport {
