@@ -1,0 +1,64 @@
+{
+  "x_targets": [
+    "https://x.com/satoshi19890101",
+    "https://x.com/mokesaretakunai",
+    "https://x.com/fukumenkantoku",
+    "https://x.com/chinkai69",
+    "https://x.com/yume_no_otoko",
+    "https://x.com/jaiko3gouda",
+    "https://x.com/pnakanohito"
+  ],
+  "monitoring_keywords": [
+    "売上", "規約", "運用", "凍結", "トレンド", "新作"
+  ],
+  "platforms": {
+    "fanza": {
+      "base_url": "https://www.dmm.co.jp/digital/videoa/",
+      "rankings": {
+        "overall": "https://www.dmm.co.jp/digital/videoa/-/ranking/",
+        "amateur": "https://www.dmm.co.jp/digital/videoa/-/ranking/=/term=realtime/cate=amateur/"
+      }
+    },
+    "mgs": {
+      "base_url": "https://www.mgstage.com/",
+      "rankings": {
+        "overall": "https://www.mgstage.com/rank/monthly/",
+        "amateur": "https://www.mgstage.com/rank/monthly/siroto/"
+      }
+    },
+    "fanclubs": [
+      {
+        "name": "Candfans",
+        "url": "https://candfans.jp/",
+        "ranking_url": "https://candfans.jp/ranking"
+      },
+      {
+        "name": "Fantube",
+        "url": "https://fantube.me/",
+        "ranking_url": "https://fantube.me/ranking"
+      },
+      {
+        "name": "Myfans",
+        "url": "https://myfans.jp/",
+        "ranking_url": "https://myfans.jp/ranking"
+      }
+    ]
+  },
+  "scraping_settings": {
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "age_verification": {
+      "fanza": {
+        "selector": "a.ageCheck__link--r18",
+        "action": "click"
+      },
+      "mgs": {
+        "selector": "#age_check_ok",
+        "action": "click"
+      }
+    }
+  }
+}
